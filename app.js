@@ -14,13 +14,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Database
-const connect = require('connect');
+const connect = require('./Database/Connect');
 connect();
 
 //rotas
+const router = require('./Middleware/RouteMiddleware');
+app.use('/api',router);
 
 //servidor listening
-port = 5000;
+const port = 5000;
 
 app.listen(process.env.PORT || port, function() {
   try {

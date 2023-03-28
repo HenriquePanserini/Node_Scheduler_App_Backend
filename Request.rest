@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/service
+Content-Type: application/json
+
+{
+
+    "name": "Colonoscope",
+    "description": "Exame no instestino",
+    "price": 2660.00,
+    "image": "https://www.google.com.br/url?sa=i&url=https%3A%2F%2Flaboratorioexame.com.br%2Fsaude%2Fcolonoscopia&psig=AOvVaw2YxIx5IKdi_6ZEilGfN2w-&ust=1680042999952000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLDMxIOW_f0CFQAAAAAdAAAAABAE"
+
+}
